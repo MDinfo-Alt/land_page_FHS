@@ -1,0 +1,103 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonte e cores principais */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  line-height: 1.7;
+  color: #333;
+  background-color: #f8f9fa;
+  padding: 40px 20px;
+}
+
+/* Container centralizado */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos */
+h1 {
+  font-size: 2rem;
+  color: #0d6efd; /* azul profissional */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.3rem;
+  color: #212529;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-left: 4px solid #0d6efd;
+  padding-left: 10px;
+}
+
+/* Parágrafos */
+p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+/* Listas */
+ul {
+  margin: 10px 0 20px 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+/* Links */
+a {
+  color: #0d6efd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #084298;
+  text-decoration: underline;
+}
+
+/* Botão de voltar */
+.container p a[href*="index.html"] {
+  display: inline-block;
+  margin-top: 20px;
+  background: #0d6efd;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.container p a[href*="index.html"]:hover {
+  background: #084298;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+  .container {
+    padding: 20px;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+}
