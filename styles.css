@@ -1,0 +1,198 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo geral */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+/* Containers */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Header */
+.hero {
+  background: linear-gradient(135deg, #0d6efd, #0b5ed7);
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background: #ffc107;
+  color: #000;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #e0a800;
+}
+
+/* Seções */
+h2 {
+  font-size: 1.8rem;
+  color: #0d6efd;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+/* CEO Section */
+.ceo-section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.ceo-photo {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #0d6efd;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ceo-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.ceo-section p {
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* Botões secundários */
+.btn-secondary {
+  display: inline-block;
+  background: #0d6efd;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: #0b5ed7;
+}
+
+/* Rodapé */
+footer {
+  background: #212529;
+  color: #adb5bd;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .ceo-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ceo-photo {
+    margin-bottom: 20px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+
+.banner-section {
+  display: flex;
+  justify-content: center; /* centraliza horizontalmente */
+  align-items: center;     /* centraliza verticalmente (se precisar altura fixa) */
+  margin: 20px 0;
+}
+
+.banner {
+  max-width: 90%;   /* ocupa no máximo 90% da tela */
+  height: auto;     /* mantém proporção */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Ajuste específico para mobile */
+@media (max-width: 768px) {
+  .banner {
+    max-width: 100%;   /* ocupa toda a largura no celular */
+    border-radius: 8px;
+  }
+}
+.video-section {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.video-wrapper {
+  max-width: 800px; /* limite a largura do vídeo */
+  margin: 0 auto;
+}
+
+.video-wrapper video {
+  width: 100%; /* garante responsividade */
+  height: 500px;
+  border-radius: 10px; /* opcional: bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* opcional: sombra */
+}
+header .container img{
+  height: 200px;
+  width: 300px;
+}
