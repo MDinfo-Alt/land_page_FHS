@@ -380,3 +380,42 @@
     /* Scroll reveal utility */
     .reveal { opacity: 0; transform: translateY(30px); transition: opacity .6s ease, transform .6s ease; }
     .reveal.visible { opacity: 1; transform: translateY(0); }
+/* ── Shorts lado a lado ── */
+.shorts-row {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  padding: 40px 5%;
+  background: var(--bg-2);
+}
+
+.shorts-row .short-item {
+  flex: 1;
+  max-width: 320px;
+}
+
+.shorts-row .short-item iframe {
+  width: 100%;
+  height: 560px;
+  border-radius: 16px;
+  display: block;
+}
+
+/* Mobile: empilha verticalmente e centraliza */
+@media (max-width: 768px) {
+  .shorts-row {
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 5%;
+    gap: 24px;
+  }
+
+  .shorts-row .short-item {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .shorts-row .short-item iframe {
+    height: 500px;
+  }
+}
