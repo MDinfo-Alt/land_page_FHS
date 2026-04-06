@@ -175,15 +175,15 @@
       position: absolute; top: 0; left: 0; right: 0; height: 2px;
       background: linear-gradient(90deg, transparent, var(--gold), transparent);
     }
-    ..hero-card-img {
-  width: 100%;
-  max-width: 500px; /* controla o tamanho máximo */
-  height: auto;
-  border-radius: 14px;
-  object-fit: contain; /* MUITO IMPORTANTE */
-  display: block;
-  margin: 0 auto;
-}
+    .hero-card-img {
+        width: 100%;
+        max-width: 500px; /* controla o tamanho máximo */
+        height: auto;
+        border-radius: 14px;
+        object-fit: contain; /* MUITO IMPORTANTE */
+        display: block;
+        margin: 0 auto;
+    }
     .stats-row {
       display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
     }
